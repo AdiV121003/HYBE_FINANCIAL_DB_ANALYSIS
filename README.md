@@ -1,16 +1,13 @@
-# HYBE Financial Performance Dashboard (FY 2023–FY 2025 Q2)
+# HYBE Financial Performance Dashboard 2024
 
 This is an **investor-style financial analysis dashboard** of Hybe Co., Ltd (the biggest South Korean Entertainment Company), built using publicly available financial disclosures from HYBE. My objective behind this project was to integrate my interests with data analysis and thus, I created this dashboard to transform raw financial statements into **structured, interactive dashboards** that can be understood by stakeholders and investors. 
 
-The project covers HYBE’s financial performance from **FY 2023 to FY 2024**, with **FY 2025 data available up to Q2 (YTD)**.
-
-**(Note: On the date of project release, Hybe 2025 Q3 data was also available but at the time of project creation and analysis, only the FY 2025 Q2 data was available)
-**---
+The project covers HYBE’s financial performance in the FY 2024, and comparison with FY 2023. 
 
 ## Data Source
 
-* Financial statements sourced from **HYBE’s official website** -> https://hybecorp.com/eng/ir/archive/result?lang=eng
-* Quarterly data chosen up to **FY 2025 Q2**
+* Financial statement was extracted directly from **HYBE’s official website** -> https://hybecorp.com/eng/ir/archive/result?lang=eng
+* Quarterly data chosen up to **FY 2024**
 * Original dataset was provided in **Korean**
 
 ---
@@ -23,7 +20,7 @@ The project covers HYBE’s financial performance from **FY 2023 to FY 2024**, w
 * The dataset was originally in Korean and required translation prior to analysis.
 * Initial translation was performed using **Papago** but few metrics were translated generically or ambiguously.
 * To ensure accuracy and business relevance, translations were refined using **ChatGPT**. This ensured alignment with standard financial analysis conventions rather than literal translations.
-  ///canva image
+<img width="1268" height="520" alt="image" src="https://github.com/user-attachments/assets/fe138e3c-7ef5-4b45-b241-ee82c5b1b245" />
 
 ---
 
@@ -31,9 +28,7 @@ The project covers HYBE’s financial performance from **FY 2023 to FY 2024**, w
 
 * The original dataset had a **wide format**, with separate columns for each quarter.
 * Using **Excel Power Query / Power Pivot**, the data was transformed into a **long (tidy) format** through unpivoting.
-* This resulted in:
-
-  * One row per metric per quarter
+* This resulted in one row per metric per quarter. 
 I performed this step to improve ease of calculations and analysis.
 
 ---
@@ -61,12 +56,9 @@ This enabled me to perform category-based filtering and analysis. It also helped
 ### 5. Financial Analysis & KPI Development
 
 * Conducted exploratory analysis using **PivotTables and PivotCharts**.
-* Developed KPIs mostly used in investor and stakeholder analysis, including:
+* Developed KPIs mostly used in investor and stakeholder analysis
 
-  * Revenue and profitability indicators 
-  * Expense efficiency measures
-  * Quarterly and yearly performance comparisons
-* I focused on understanding which metrics matter most in evaluating a company's performance rather than just reporting numerical values.
+I focused on understanding which metrics matter most in evaluating a company's performance rather than just reporting numerical values.
 
 ---
 
@@ -88,25 +80,26 @@ I validated my calculations and insights by referencing:
 * Built interactive dashboards designed from an **investor-oriented perspective** and applied intuitive aesthetic design principles to maintain visual hierarchy.
 * I made use of cohesive color theme inspired by HYBE/BTS branding
 * Integrated brand-relevant visuals (logos and artist imagery)
-<img width="1094" height="502" alt="image" src="https://github.com/user-attachments/assets/fcf4c478-4e51-49e7-b802-d63ff36661a2" />
+----
+REVENUE DASHBOARD
 
+<img width="728" height="336" alt="image" src="https://github.com/user-attachments/assets/7ea5d993-90a3-414d-8a8d-31f99cf510f9" />
 
-<img width="1046" height="464" alt="image" src="https://github.com/user-attachments/assets/0e2dbeed-a443-49bd-9708-39fd444de3ad" /> 
+----
+EXPENSES DASHBOARD
 
+<img width="765" height="350" alt="image" src="https://github.com/user-attachments/assets/06689203-0645-41dd-9bf7-ed3262b7e210" />
 
-Profits Dashboard: 
+----
+PROFITS DASHBOARD
 
-<img width="1037" height="477" alt="image" src="https://github.com/user-attachments/assets/3a6aea39-7ce8-45f5-a96c-b1104d9e62a7" />
-
-
+<img width="714" height="336" alt="image" src="https://github.com/user-attachments/assets/7e571e60-8c54-4f56-a619-a8e52ebaf68e" />
 
 ---
 
 ### 8. Interactivity
 
-* Implemented **Excel Macros and basic VBA** to:
-
-  * Create navigation buttons that allow seamless transitions between Revenue, Expense, and Profit dashboards
+* Implemented **Excel Macros and basic VBA** to create navigation buttons that allow seamless transitions between Revenue, Expense, and Profit dashboards
 ---
 
 ## Tools & Technologies
@@ -132,8 +125,19 @@ Profits Dashboard:
 ---
 
 ## INSIGHTS AND INTERPRETATION:
-
-> *This section will be expanded to include key insights and investor-oriented interpretations derived from the dashboards.*
+- Total Revenue increased by **3.56%** from 2023, despite BTS' hiatus. This indicates multi-label strategy is successful.
+- Highest Quarterly Revenue in FY 2024 Q4 - ₩ 7,26,419 billion
+- **Albums** were the primary revenue drivers, followed by **Concert Revenue** (#2) and **Merchandise & Licensing** (#3)
+- Operating Expenses increased in 2024, indicating a deliberate aggressive expansion phase.
+- Operating Expense Ratio of 0.91 indicates that from every ₩ 1 of revenue, ₩ 0.91 is spent on operating costs.
+- High operating cost also indicates short term margin pressure is present as company absorbs costs before revenue realization.
+- COGS is the highest expense category indicating expenses are majorly for revenue generating activities rather than administration overhead
+- SG&A increased due to debut of 3 groups debut marketing activities.
+- Non-operating expenses and Corporate Tax decreased, partially offsetting the impact of operating expenses growth.
+- Expenses volatility is proportional to business cycles like artist's music, concert schedule not due to structural ineffeciency.
+- Hybe recorded net loss in profits, decreasing up to 102%. This is reportedly due to non-operating valuation losses on equity investments like SM Entertainment.
+- Operating Profit is volatile and aligns with front-load investment patterns like music release and concert schedules.
+- Gross Profit Margin is 42.5% i.e it is stable but operating income decreased and net income further declined. 
 
 ---
 
